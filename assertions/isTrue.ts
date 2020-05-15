@@ -1,6 +1,6 @@
 import { AssertionError } from "../AssertionError.ts";
 
-export function isTrue (msg?: string) {
+export function isTrue(msg?: string) {
   return (value: unknown, not: boolean = false) => {
     let message: string;
 
@@ -8,7 +8,7 @@ export function isTrue (msg?: string) {
       if (value === true) {
         message = `Expected value to NOT be "true".`;
         message += !msg ? "" : ` ${msg}`;
-        
+
         throw new AssertionError(message);
       }
     } else if (!(value === true)) {
@@ -17,5 +17,5 @@ export function isTrue (msg?: string) {
 
       throw new AssertionError(message);
     }
-  }
+  };
 }

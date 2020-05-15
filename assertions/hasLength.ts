@@ -1,0 +1,1 @@
+//  check length of string, array, map, set and object ownProperties.

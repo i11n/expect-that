@@ -4,7 +4,7 @@ Deno.test("throws", () => {
   expectThat(() => {
     throw new Error();
   })(
-    throws()
+    throws(),
   );
 });
 

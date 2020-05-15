@@ -3,8 +3,8 @@ import { hasValue } from "./hasValue.ts";
 
 Deno.test("hasValue", () => {
   expectThat(false)(
-    hasValue()
+    hasValue(),
   );
-})
+});
 
 //  Test assertions when passed bad data

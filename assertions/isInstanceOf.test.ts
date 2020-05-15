@@ -3,8 +3,8 @@ import { isInstanceOf } from "./isInstanceOf.ts";
 
 Deno.test("isInstanceOf", () => {
   expectThat({})(
-    isInstanceOf(Object)
+    isInstanceOf(Object),
   );
-})
+});
 
 //  Test assertions when passed bad data

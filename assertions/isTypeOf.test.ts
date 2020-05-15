@@ -3,8 +3,8 @@ import { isTypeOf } from "./isTypeOf.ts";
 
 Deno.test("isTypeOf", () => {
   expectThat("Hello world")(
-    isTypeOf("string")
+    isTypeOf("string"),
   );
-})
+});
 
 //  Test assertions when passed bad data

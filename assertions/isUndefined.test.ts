@@ -3,8 +3,8 @@ import { isUndefined } from "./isUndefined.ts";
 
 Deno.test("isUndefined", () => {
   expectThat(undefined)(
-    isUndefined()
+    isUndefined(),
   );
-})
+});
 
 //  Test assertions when passed bad data

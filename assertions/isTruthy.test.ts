@@ -3,8 +3,8 @@ import { isTruthy } from "./isTruthy.ts";
 
 Deno.test("isTruthy", () => {
   expectThat(1)(
-    isTruthy()
+    isTruthy(),
   );
-})
+});
 
 //  Test assertions when passed bad data
